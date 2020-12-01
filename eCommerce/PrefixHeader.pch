@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  eCommerce
+//
+//  Created by admin on 2020/7/15.
+//  Copyright © 2020 admin. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import <Masonry.h>
+#define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define mainColor [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1]
+
+#define VIEW_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define VIEW_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+#ifdef DEBUG //如果是开发调试状态
+#define YCLog(...) NSLog(__VA_ARGS__) //...表示参数不受限制
+#elif
+#define YCLog(...) //如果是发布状态
+#endif
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
